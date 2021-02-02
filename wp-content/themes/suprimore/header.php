@@ -15,7 +15,16 @@
 	</head>
 
     <body <?php body_class(); ?>>       
-
+        <div class="section">
+            <ul>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="">(19) 9 999-9999</a></li>
+                <li><i class="fab fa-whatsapp"></i><a href="">(19) 9 999-9999</a></li>
+                <li><i class="far fa-envelope"></i><a href="">cabides@cabides.cabides</a></li>
+            </ul>
+           
+           
+            
+        </div>
         <section id="menu-principal">
             <div class="container">
                 <div class="row">
@@ -31,8 +40,9 @@
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item my-auto d-none d-sm-inline-block">
                                     <a class="nav-link" href="<?=home_url('/');?>">
-                                            <img src="<?=get_template_directory_uri()?>/img/logo.jpg" class="img-fluid align-top" alt="Suprimore">
+                                            <img src="<?=get_template_directory_uri()?>/img/logo-nrc.jpg" class="img-fluid align-top" alt="Suprimore">
                                         </a>
+                                        
                                 </li>
 
                                 <?php
@@ -51,7 +61,7 @@
                                     </li>
                                 <?php
                                     if($i<$t) {
-                                        echo '<li class="nav-item my-auto divisor-menu d-none d-sm-inline-block">/</li>';
+                                        echo '<li class="nav-item my-auto divisor-menu d-none d-sm-inline-block">|</li>';
                                     }
                                     $i++;
                                 }
@@ -79,6 +89,10 @@
                                 }
                                 ?>
                             </ul>
+                        </div>
+                        <div class="social">
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
                         </div>
                     </nav>
                 </div>

@@ -18,7 +18,7 @@
                     <div class="col-sm-4">
                         <div class="w-100 text-center">
                             <a href="<?=home_url('/');?>">
-                                <img class="img-fluid" src="<?=get_template_directory_uri()?>/img/logo.jpg" alt="Suprimore">
+                                <img class="img-fluid" src="<?=get_template_directory_uri()?>/img/logo-nrc.jpg" alt="Suprimore">
                             </a>
                         </div>
                         <br>

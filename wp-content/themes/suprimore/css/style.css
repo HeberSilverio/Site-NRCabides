@@ -47,6 +47,35 @@ h2 {
     font-size: 30px;
     text-transform: uppercase;
 }
+.section {
+    width: 100%;
+    float: left;  
+    background: #000;
+}
+.section.phones {
+    
+    list-style: none;
+}
+.section ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section ul li {
+    list-style: none;
+    align-items: center;
+    margin-top: 10px;
+}
+.section ul li a {
+    color: #fff;
+    text-decoration: none;
+    outline: none; 
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+.section ul li i {
+    color: #e52520;
+}
 
 .navbar.bg-light {
     background-color: #FFFFFF !important;
@@ -54,17 +83,27 @@ h2 {
 
 .navbar .nav-link {
     padding: 8px 35px !important;
-    color: #4E4D4D !important;
+    color: hsl(0, 1%, 30%) !important;
+    white-space:nowrap
+    
 }
 
 .navbar .nav-link:hover, .navbar .nav-item.active .nav-link {
-    color: #071D48 !important;
+    color: #e52520 !important;
 }
 
 .navbar .divisor-menu {
     font-size: 10pt !important;
 }
-
+.social {
+    display: flex;
+   
+}
+.social a {
+    margin-right: 10px;
+    color: #e52520 !important;
+    font-size: 1.5rem;
+}
 #banners {
     position: relative;
 }
@@ -157,7 +196,7 @@ h2 {
 #produtos-home {
     position: relative;
     top: -113px;
-    background: url(../img/bg-produtos-home-2.png) no-repeat top;
+    background: #fff;
     background-size: 100%;
     padding-bottom: 40px;
 }
@@ -171,7 +210,7 @@ h2 {
 }
 
 .produto .img-produto {
-    background: url(../img/bg-produtos.svg);
+    background: transparent;
     height: 172px;
     width: 172px;
     margin: 0 auto;
@@ -306,7 +345,7 @@ h2 {
 }
 
 .btn-verde, .btn-branco:hover, .page-numbers {
-    background-color: #071D48 !important;
+    background-color: #e52520 !important;
     color: #FFFFFF !important;
     border-radius: 50px !important;
     padding: 8px 25px !important;
@@ -331,8 +370,8 @@ h2 {
 
 .btn-branco {
     background-color: #FFFFFF !important;
-    color: #071D48 !important;
-    border-color: #071D48 !important;
+    color: #e52520 !important;
+    border-color: #e52520 !important;
     border-radius: 50px !important;
     padding: 8px 25px !important;
     font-size: 16px !important;
@@ -367,7 +406,7 @@ h2 {
 }
 
 .topo-page a, .topo-page a:hover {
-    color: #071D48;
+    color: #e52520;
     font-weight: bold;
 }
 

@@ -50,7 +50,7 @@ no-repeat top; background-size: 100%;">
                 endif; ?>
             </div>
             <div class="col-sm-6 mb-4 text-center">
-                <img class="img-fluid" src="<?=get_template_directory_uri()?>/img/img-sobre-nos.png" alt="Suprimore">
+                <img class="img-fluid" src="<?=get_template_directory_uri()?>/img/sobre.jpg" alt="Suprimore">
             </div>
         </div>
     </div>
