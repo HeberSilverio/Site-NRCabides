@@ -1,0 +1,2 @@
+[21-Apr-2019 21:04:22 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/telescopio/public_html/wp-content/themes/telescopiodigital/index.php on line 2
+[22-Apr-2019 15:08:34 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/telescopio/public_html/wp-content/themes/telescopiodigital/index.php on line 2
