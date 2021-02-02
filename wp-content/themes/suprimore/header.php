@@ -29,52 +29,55 @@
 
                         <div class="collapse navbar-collapse row" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
-                            <?php
-                            $itens_menu = wp_get_nav_menu_items('Menu Esquerda');
-                            $t = count($itens_menu);
-                            $i = 1;
-                            foreach($itens_menu as $menu_item) {
-                                $active = ($menu_item->object_id == get_queried_object_id()) ? 'active' : '';
-                                $active = (is_home() && $menu_item->title=='Home') ? 'active' : $active;
-                                ?>
-                                <li class="nav-item my-auto <?=$active?>">
-                                    <a class="nav-link" href="<?=$menu_item->url?>"><?=$menu_item->title?>
-                                    <?=($active=='active')?'<span class="sr-only">(current)</span>':''?>
-                                    </a>
+                                <li class="nav-item my-auto d-none d-sm-inline-block">
+                                    <a class="nav-link" href="<?=home_url('/');?>">
+                                            <img src="<?=get_template_directory_uri()?>/img/logo.jpg" class="img-fluid align-top" alt="Suprimore">
+                                        </a>
                                 </li>
-                            <?php
-                                if($i<$t) {
-                                    echo '<li class="nav-item my-auto divisor-menu d-none d-sm-inline-block">/</li>';
+
+                                <?php
+                                    $itens_menu = wp_get_nav_menu_items('Menu Esquerda');
+                                    $t = count($itens_menu);
+                                    $i = 1;
+                                    foreach($itens_menu as $menu_item) {
+                                        $active = ($menu_item->object_id == get_queried_object_id()) ? 'active' : '';
+                                        $active = (is_home() && $menu_item->title=='Home') ? 'active' : $active;
+                                    ?>
+                                   
+                                    <li class="nav-item my-auto <?=$active?>">
+                                        <a class="nav-link" href="<?=$menu_item->url?>"><?=$menu_item->title?>
+                                        <?=($active=='active')?'<span class="sr-only">(current)</span>':''?>
+                                        </a>
+                                    </li>
+                                <?php
+                                    if($i<$t) {
+                                        echo '<li class="nav-item my-auto divisor-menu d-none d-sm-inline-block">/</li>';
+                                    }
+                                    $i++;
                                 }
-                                $i++;
-                            }
-                            ?>
-
-                            <li class="nav-item my-auto d-none d-sm-inline-block">
-                                <a class="nav-link" href="<?=home_url('/');?>">
-                                    <img src="<?=get_template_directory_uri()?>/img/logo.jpg" class="img-fluid align-top" alt="Suprimore">
-                                </a>
-                            </li>
-
-                            <?php
-                            $itens_menu = wp_get_nav_menu_items('Menu Direita');
-                            $t = count($itens_menu);
-                            $i = 1;
-                            foreach($itens_menu as $menu_item) {
-                                $active = ( $menu_item->object_id == get_queried_object_id()) ? 'active' : '';
                                 ?>
-                                <li class="nav-item my-auto <?=$active?>">
-                                    <a class="nav-link" href="<?=$menu_item->url?>"><?=$menu_item->title?>
-                                    <?=($active=='active')?'<span class="sr-only">(current)</span>':''?>
-                                    </a>
-                                </li>
-                            <?php
-                                if($i<$t) {
-                                    echo '<li class="nav-item my-auto divisor-menu d-none d-sm-inline-block">/</li>';
+
+                                
+
+                                <?php
+                                $itens_menu = wp_get_nav_menu_items('Menu Direita');
+                                $t = count($itens_menu);
+                                $i = 1;
+                                foreach($itens_menu as $menu_item) {
+                                    $active = ( $menu_item->object_id == get_queried_object_id()) ? 'active' : '';
+                                    ?>
+                                    <li class="nav-item my-auto <?=$active?>">
+                                        <a class="nav-link" href="<?=$menu_item->url?>"><?=$menu_item->title?>
+                                        <?=($active=='active')?'<span class="sr-only">(current)</span>':''?>
+                                        </a>
+                                    </li>
+                                <?php
+                                    if($i<$t) {
+                                        echo '<li class="nav-item my-auto divisor-menu d-none d-sm-inline-block">/</li>';
+                                    }
+                                    $i++;
                                 }
-                                $i++;
-                            }
-                            ?>
+                                ?>
                             </ul>
                         </div>
                     </nav>
