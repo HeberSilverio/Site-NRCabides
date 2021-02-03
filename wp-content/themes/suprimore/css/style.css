@@ -45,8 +45,20 @@ p {
 h2 {
     font-family: "Raleway Black", sans-serif;
     font-size: 30px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
 }
+ h2::after {
+    content: '';
+    bottom: -8px;
+    height: 3px;
+    width: 20%;
+    background: #e52520; 
+    
+}
+
 .section {
     width: 100%;
     float: left;  
@@ -65,16 +77,17 @@ h2 {
     list-style: none;
     align-items: center;
     margin-top: 10px;
+    margin-right: 20px;
 }
 .section ul li a {
     color: #fff;
     text-decoration: none;
     outline: none; 
-    margin-left: 10px;
-    margin-right: 10px;
+    
 } 
 .section ul li i {
     color: #e52520;
+    margin-right: 5px;
 }
 
 .navbar.bg-light {
@@ -177,7 +190,9 @@ h2 {
     font-size: 36px;
     color: #FFFFFF;
 }
-
+.banner h2::after {
+    background: transparent;
+}
 .banner p {
     font-size: 18px;
     color: #FFFFFF;
@@ -191,6 +206,7 @@ h2 {
 #produtos-home-topo svg {
     margin-left: -1px;
     margin-right: -1px;
+    
 }
 
 #produtos-home {
@@ -204,6 +220,7 @@ h2 {
 #produtos-home h2 {
     color: #484242;
 }
+
 
 #produtos-home a, #produtos-home a:hover {
     text-decoration: none;
@@ -256,8 +273,11 @@ h2 {
 }
 
 #sobre-nos-home h2 {
+    
     color: #484242;
     margin-bottom: 30px;
+    
+    
 }
 
 #contato-home {
@@ -268,6 +288,9 @@ h2 {
 
 #contato-home h2, #contato-home p {
     color: #FFFFFF;
+}
+#contato-home h2::after {
+    background: transparent;
 }
 
 #contato-home p {
@@ -281,6 +304,9 @@ h2 {
 #novidades-home h2 {
     color: #484242;
     margin-bottom: 30px;
+}
+.post h2::after {
+    background: transparent;
 }
 
 .post img {
@@ -308,15 +334,16 @@ h2 {
 }
 
 #clientes-home {
-    background: url(../img/bg-clientes-home.jpg) no-repeat center;
+    background: #484242;
     background-size: cover;
     padding: 40px 0;
 }
 
 #clientes-home h2 {
-    color: #484242;
+    color: #fff;
     margin-bottom: 30px;
 }
+
 
 .slick-clientes-home .slick-prev, .slick-clientes-home .slick-next {
     font-size: 28px !important;
@@ -548,7 +575,7 @@ footer .links-contato {
 }
 
 footer .links-contato i {
-    color: #071D48;
+    color: #e52520;
     font-weight: bold;
 }
 
@@ -556,7 +583,10 @@ footer h2 {
     position: relative;
     font-size: 18px;
     color: #484242;
-    margin-bottom: 25px;
+    margin-bottom: 25px; 
+    display: flex;
+    flex-direction: row;
+    
 }
 
 footer h2:after {
@@ -566,7 +596,7 @@ footer h2:after {
     left: 0;
     height: 3px;
     width: 40%;
-    background: #071D48;
+    background: #e52520;
 }
 
 footer ul {

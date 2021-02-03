@@ -63,7 +63,7 @@ $dados_empresa = pods('dados_da_empresa', array('limit'=>0));
                 c33.6,0.78,91.44-34.67,91.44-34.67c44.71-22.35,97.15-28.7,131.34-30.24H1140v-1.9H1139.5z"/>
             </clipPath> 
         </defs>
-        <image xlink:href="<?=get_template_directory_uri()?>/img/bg-produtos-home.png" width="100%"
+        <image xlink:href="<?=get_template_directory_uri()?>/img/bg-produt-home.jpg" width="100%" 
         x="0" y="0" clip-path="url(#theClippingPath)"></image>
     </svg>
 </section>
@@ -166,7 +166,7 @@ if($clientes->total() > 0) { ?>
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2>NOSSOS CLIENTES</h2>
+                <h2>EMPRESAS QUE CONFIAM EM NOSSO TRABALHO</h2>
 
                 <div class="slick-clientes-home">
                     <?php
